@@ -12,7 +12,7 @@ export default function NavSelection() {
     <>
       {constProjects.map(item => (
         <ListItem key={ item.id }>
-          <ListItemButton>
+          <ListItemButton> {/* TODO: Link to Project */}
             <ListItemIcon>
               <ChevronRightIcon />
             </ListItemIcon>

@@ -10,7 +10,7 @@ export default function NavSelection() {
     <>
       {constItems.map(item => (
         <ListItem key={ item.id }>
-          <ListItemButton>
+          <ListItemButton> {/* TODO: Link to Home */}
             <ListItemIcon>
               { item.icon }
             </ListItemIcon>

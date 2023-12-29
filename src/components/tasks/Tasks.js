@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Table from '@mui/joy/Table';
+import TableHead from '@mui/material/TableHead'
+import TableBody from '@mui/material/TableBody'
+import TableRow from '@mui/material/TableRow'
+import TableCell from '@mui/material/TableCell'
 import Link from '@mui/material/Link'
 
 function Tasks () {
@@ -21,6 +25,18 @@ function Tasks () {
     })
   }, [])
 
+    function priorityLevel (priority) {
+      if ( priority < 4) {
+        return 'Low'
+      } else if ( priority > 3 && priority < 7 ){
+        return 'Moderate'
+      } else if ( priority > 6 ) {
+        return 'High'
+      } else {
+        return '-'
+      }
+    }
+
   return (
     <Table 
       aria-label="basic table" 
@@ -28,29 +44,29 @@ function Tasks () {
       stickyHeader
       sx={{ padding: 2 }}
     >
-      <thead>
-        <tr>
-          <th style={{ textAlign: 'center' }}>Name</th>
-          <th style={{ textAlign: 'center' }}>Status</th>
-          <th style={{ textAlign: 'center' }}>Priority</th>
-          <th style={{ textAlign: 'center' }}>Assigned To</th>
-        </tr>
-      </thead>
-      <tbody>
+      <TableHead>
+        <TableRow>
+          <TableCell>Name</TableCell>
+          <TableCell>Status</TableCell>
+          <TableCell>Priority</TableCell>
+          <TableCell>Assigned To</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
         {tasks.map(task => {
           return (
-          <tr key={ task.id }>
-            <td>{ task.name }</td>
-            <td>{ task.status }</td>
-            <td>{ task.priority }</td>
-            <td>
-              <Link href='#' underline='hover'>
+          <TableRow key={ task.id }>
+            <TableCell>{ task.name }</TableCell>
+            <TableCell>{ task.status }</TableCell>
+            <TableCell>{ priorityLevel(task.priority) }</TableCell>
+            <TableCell>
+              <Link href='#' underline='hover'> {/* TODO: Link to User */}
                 { users.find(user => user.id === task.assigned_to).name }
               </Link>
-            </td>
-          </tr>
+            </TableCell>
+          </TableRow>
         )})}
-      </tbody>
+      </TableBody>
     </Table>
   )
 }

@@ -57,7 +57,7 @@ export default function DrawerCloseButton() {
             METIS
           </Typography>
           <Box sx={{ flexGrow: 1, textAlign: 'right' }}>
-            <IconButton>
+            <IconButton> {/* TODO: Link to User */}
               <Avatar alt="Avatar" src="" />
             </IconButton>
           </Box>
