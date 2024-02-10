@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: { // 60-30-10 Color Rule
-        // TODO: Review Colors
+        // TODO: Review Colors & Naming Convention
+        // Goal: Naming Convention to allow for same pattern with 
+        //  varying color schemes for if we want to switch later
         'primary': '#131B23', //Rich Black
         'secondary': '#E9F1F7', // Alice Blue
         'accent': '#77BCE4' //Maya Blue

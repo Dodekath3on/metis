@@ -5,7 +5,7 @@ function BodyContainer() {
   return (
     <>
       <BodyDesktop />
-      {/* TODO: Add <MobileDesktop /> */}
+      {/* TODO: Add <BodyMobile /> */}
     </>
   )
 }

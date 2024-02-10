@@ -3,6 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer className='flex bottom-0 px-8 py-8 w-full text-sm'>
+      {/* TODO: Update to use footerConsts */}
       <ul>
         <li>
           <a href="#">Instagram</a>

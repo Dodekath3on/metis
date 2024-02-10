@@ -9,6 +9,7 @@ function NavDesktop() {
         { navConsts.map( nav => {
           return (
             <li>
+              {/* TODO: Add hover to secondary color */}
               <Link to={ nav.href } className='px-2 text-xl font-semibold text-secondary'>{ nav.name }</Link>
             </li>
         )})}

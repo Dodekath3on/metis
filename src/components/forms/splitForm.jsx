@@ -2,7 +2,7 @@ import React from 'react'
 
 function splitForm() {
   return (
-    // TODO: Modularize split form to be used for Contact & User Sign In
+    // TODO: Re-Evaluate Forms vs Various Pre-set Page Layouts
     <section>
       {/* Information and instructions to go here */}
       <div>
