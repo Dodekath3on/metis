@@ -1,16 +1,26 @@
+# Metis - Project Management and Resourcing Tool
 
-## New Project Install Information
-- [Bun](https://bun.sh/) is a new JavaScript toolkit meant to replace Node.js. It is easy to use and [faster](https://www.builder.io/blog/bun-vs-node-js) than Node so I use it when I can.
-- Getting Started with [Vite](https://vitejs.dev/guide/) (w/Bun)
-- Installing [TailwindCSS](https://tailwindcss.com/docs/guides/vite) with Vite - the best guide that I found
+## Installations
 
-## Template React + Vite Information
+- [Bun](https://bun.sh/)
+- [Vite](https://vitejs.dev/guide/)
+- [TailwindCSS](https://tailwindcss.com/docs/guides/vite)
 
-### React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Bun
+Bun was released in 2023 and is currently touted as a faster all-in-one toolkit to replace Node.js. Trying to use Bun whenever possible and use NPM as a backup if we run across anything that Bun doesn't work with for some reason. The goal is to keep up with the Bun environment and see how it evolves as it becomes tested by the developer community.
 
-Currently, two official plugins are available:
+### Vite
+Vite is a Front end dev tool focused on speed and performance. It creates a nice to use and responsive development environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### TailwindCSS
+TailwindCSS is a framework that allows for faster development of styling for the front end using pre-defined class components.
+
+## VS Code Extensions
+I highly recommend installing:
+
+### Tailwind CSS IntelliSense
+Incredibly helpful suggestions and auto-complete features. I highly recommend adding the 'Recommended VS Code Settings' to enable these features.
+
+### Todo Tree
+See this extension for notes of what needs done throughout the code. The extension will create a tab on the left-hand side of the IDE window where you can see all the todo's throughout the repo. This could be a good place to identify current or new tasks that need done in the code base.
