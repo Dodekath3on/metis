@@ -1,14 +1,14 @@
 export const navConsts =[
   {
-    href: '/',
+    href: '/products',
     name: 'Products'
   },
   {
-    href: '/',
+    href: '/resources',
     name: 'Resources'
   },
   {
-    href: '/',
+    href: '/contact',
     name: 'Contact'
   },
 ]
