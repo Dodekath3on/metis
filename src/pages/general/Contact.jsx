@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import ContactForm from '../../components/forms/ContactForm'
 
 function Contact() {
@@ -8,7 +10,7 @@ function Contact() {
       <section className='w-full px-4 pb-[97%]'>
         <h2 className='text-4xl text-secondary pb-2'>Have questions?</h2>
         <p className='text-md text-secondary py-2'>Fill out your information and someone from our team will get back to you as soon as we can.</p>
-        <p className='text-md text-secondary py-2'>Check out our <a className='underline' href='#'>FAQ</a> page to see some already answered questions.</p>
+        <p className='text-md text-secondary py-2'>Check out our <Link to={ '/faq' } className='underline'>FAQ</Link> page to see some already answered questions.</p>
       </section>
       <section className='px-8'>
         {/* TODO: Update Contact Form */}
