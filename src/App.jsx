@@ -7,6 +7,7 @@ import Contact from './pages/general/Contact'
 import Resources from './pages/general/Resources'
 import Products from './pages/general/Products'
 import SignIn from './pages/general/SignIn'
+import SignUp from './pages/general/SignUp'
 import Overview from './pages/signed_in/Overview'
 import Projects from './pages/signed_in/Projects'
 import User from './pages/signed_in/User'
@@ -23,6 +24,7 @@ function App() {
           <Route path='/resources' element={ <Resources /> }/>
           <Route path='/products' element={ <Products /> }/>
           <Route path='/sign_in' element={ <SignIn /> }/>
+          <Route path='/sign_up' element={ <SignUp /> }/>
 
           {/* TODO: Make sure that user is signed in to access these pages */}
           <Route path='/overview' element={ <Overview /> }/>

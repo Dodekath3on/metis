@@ -9,7 +9,7 @@ function Footer() {
         { footerConsts.map( footer => {
           return (
             <li className='px-2'>
-              <a href={ footer.href } target='_blank' rel='noreferrer noopener'>{ footer.icon }</a>
+              <a className='text-lg hover:text-accent' href={ footer.href } target='_blank' rel='noreferrer noopener'>{ footer.icon }</a>
             </li>
         )})}
       </ul>
