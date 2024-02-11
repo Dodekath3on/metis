@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tasks() {
   return (
-    <div>Tasks</div>
+    <div className='pt-40'>Tasks</div>
   )
 }
 

@@ -5,7 +5,7 @@ import { navConsts } from '../consts/navConsts'
 function NavDesktop() {
   return (
     <nav className='hidden md:block top-0'>
-      <ul className='flex pt-2'>
+      <ul className='flex pt-1'>
         { navConsts.map( nav => {
           return (
             <li>

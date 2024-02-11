@@ -1,12 +1,16 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Layout from './pages/Layout'
 import Home from './pages/general/Home'
 import Contact from './pages/general/Contact'
 import Resources from './pages/general/Resources'
 import Products from './pages/general/Products'
 import SignIn from './pages/general/SignIn'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Overview from './pages/signed_in/Overview'
+import Projects from './pages/signed_in/Projects'
+import User from './pages/signed_in/User'
+import Tasks from './pages/signed_in/Tasks'
 
 function App() {
 
@@ -22,6 +26,9 @@ function App() {
 
           {/* TODO: Make sure that user is signed in to access these pages */}
           <Route path='/overview' element={ <Overview /> }/>
+          <Route path='/user' element={ <User /> }/>
+          <Route path='/projects' element={ <Projects /> }/>
+          <Route path='/tasks' element={ <Tasks /> }/>
 
           {/* TODO: Other routes here */}
 
