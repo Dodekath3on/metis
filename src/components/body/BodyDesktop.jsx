@@ -6,7 +6,7 @@ import CTABtn from '../../micro/CTABtn'
 function BodyDesktop() {
   return (
     <main className='py-40 max-sm:hidden bg-primary'>
-      {bodyConsts.map(body => {
+      {bodyConsts.map( body => {
         return (
           <section className='px-8 text-left'>
             {/* TODO: Sections to be broken into their own components - Ex. Welcome, Body, Analytics, */}
