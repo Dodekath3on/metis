@@ -6,6 +6,7 @@ import Resources from './pages/general/Resources'
 import Products from './pages/general/Products'
 import SignIn from './pages/general/SignIn'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Overview from './pages/signed_in/Overview'
 
 function App() {
 
@@ -18,7 +19,12 @@ function App() {
           <Route path='/resources' element={ <Resources /> }/>
           <Route path='/products' element={ <Products /> }/>
           <Route path='/sign_in' element={ <SignIn /> }/>
+
+          {/* TODO: Make sure that user is signed in to access these pages */}
+          <Route path='/overview' element={ <Overview /> }/>
+
           {/* TODO: Other routes here */}
+
         </Route>
       </Routes>
     </BrowserRouter>

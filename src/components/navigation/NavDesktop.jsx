@@ -10,7 +10,7 @@ function NavDesktop() {
           return (
             <li>
               {/* TODO: Add hover to secondary color */}
-              <Link to={ nav.href } className='px-2 text-xl font-semibold text-secondary'>{ nav.name }</Link>
+              <Link to={ nav.href } className='px-2 text-lg text-secondary'>{ nav.name }</Link>
             </li>
         )})}
       </ul>

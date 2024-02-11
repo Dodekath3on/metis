@@ -11,4 +11,8 @@ export const navConsts =[
     href: '/contact',
     name: 'Contact'
   },
+  {
+    href: '/sign_in',
+    name: 'Sign In'
+  },
 ]
