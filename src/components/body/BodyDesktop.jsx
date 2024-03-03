@@ -14,7 +14,7 @@ function BodyDesktop() {
             <p className='text-secondary pb-4'>{ body.section.p1 }</p>
             <p className='text-secondary pb-4'>{ body.section.p2 }</p>
             {/* TODO: Make actionBtn its own micro component to use in app */}
-            <CTABtn text={ 'Get Started'} url={ '/sign_in' } />
+            <CTABtn text={ 'Get Started' } url={ '/sign_in' } />
           </section>
         )})}
     </main>

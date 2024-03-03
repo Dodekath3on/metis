@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6"
 export const footerConsts = [
   {
     icon: <FaInstagram />,
-    href: 'https://www.instagram.com/', // TODO: Create Instagram page for Metis/Dodekath3on
+    href: 'https://www.instagram.com/dodekath3on/',
     altText: 'Instagram',
   },
   {
